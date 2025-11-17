@@ -27,69 +27,63 @@
         <a href=""><img src="../insta.png"></a>
       </div>
     </header>
-    <section style="padding: 8vw; padding-top: 50px; display: flex; flex-direction: column; gap: 50px;">
+    <section style="padding: 8vw; padding-top: 50px; padding-bottom: 50vh; display: flex; flex-direction: column; gap: 50px;">
       <h1 style="font-size: 48px; font-weight: 400; padding-bottom: 20px; text-align: center;">My Projects</h1>
       <section style="
         display: flex;
         gap: 40px;
         flex-wrap: wrap;
       ">
-        <a
-          style="
-            background-image: url(../images/video-reporting.png);
-            background-size: cover;
-            background-position: center top;
-            width: 300px;
-            flex-grow: 1;
-            height: 600px;
-            line-height: 600px;
-            text-align: center;
-            font-weight: 400;
-            font-size: 30px;
-          "
-          href=""
-        >
-          Video Reporting
+        <a href="" class="portfolio-item">
+          <img src="../images/video-reporting.png">
+          <p>Video Reporting</p>
         </a>
-        <a
-          style="
-            background-image: url(../images/video-reporting.png);
-            background-size: cover;
-            background-position: center top;
-            width: 300px;
-            flex-grow: 1;
-            height: 600px;
-            line-height: 600px;
-            text-align: center;
-            font-weight: 400;
-            font-size: 30px;
-          "
-          href=""
-        >
-          Video Reporting
+        <a href="" class="portfolio-item">
+          <img src="../images/rallies-and-conversations.jpg">
+          <p>Rallies and Conversations</p>
         </a>
-        <a
-          style="
-            background-image: url(../images/video-reporting.png);
-            background-size: cover;
-            background-position: center top;
-            width: 300px;
-            flex-grow: 1;
-            height: 600px;
-            line-height: 600px;
-            text-align: center;
-            font-weight: 400;
-            font-size: 30px;
-          "
-          href=""
-        >
-          Video Reporting
+        <a href="" class="portfolio-item">
+          <img src="../images/mini-documentaries.jpg">
+          <p>Mini-Documentaries</p>
         </a>
       </section>
     </section>
   </main>
 </body>
 </html>
+
+<style>
+  .portfolio-item {
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    flex-grow: 1;
+    position: relative;
+  }
+
+  .portfolio-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(.5);
+  } 
+
+  .portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(.75);
+    transition: transform 300ms ease;
+  }
+  
+  .portfolio-item p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+  } 
+</style>
 
 <style>
   html, body {
